@@ -17,7 +17,7 @@ void main()
     }
 } */
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <stdlib.h>
 int main()
 {
@@ -38,9 +38,9 @@ int main()
     }
 
     return 0;
-}
+} */
 
-/* #include <conio.h>
+#include <conio.h>
 #include <stdio.h>
 
 int main()
@@ -62,4 +62,4 @@ int main()
         printf("\n");
     }
     return 0;
-} */
+}
