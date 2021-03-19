@@ -79,7 +79,7 @@ int main()
     s("%d", &num);
 
     printf("The output is: ");
-    for (int end = 1; end <= num; num--)
+    for (int end = 1; num >= end; num--)
     {
         p("%d ", num);
     }
