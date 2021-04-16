@@ -124,7 +124,7 @@ void main()
 #include <stdio.h>
 unsigned long onHand = 5000, bankMoney, deposit, withdraw;
 int choice, k;
-int transaction = 1;
+char transaction = 'y';
 void main()
 {
 
@@ -197,3 +197,87 @@ void main()
     } while (!k);
     printf("\n\n THANKS FOR USING OUT ATM SERVICE");
 }
+
+/* #include <stdio.h>
+
+unsigned long amount1 = 0, amount2 = 3000, onhandmoney1 = 5000, onhandmoney2 = 2000, onhandmoney3 = 0, deposit, withdraw;
+
+int choice, k;
+
+int transaction = 0;
+
+int main()
+{
+
+    do
+    {
+        printf("Welcome to ATM Service\n");
+
+        printf("1. Withdraw Money\n");
+
+        printf("2. Deposit Money\n");
+
+        printf("3. Check Balance\n");
+
+        printf("0. Quit\n");
+
+        printf("_____________________________________________________________\n\n");
+
+        printf("Enter your choice: ");
+
+        scanf("%d", &choice);
+        switch (choice)
+        {
+        case 1:
+            printf("\n Your onhand Money is: %lu", onhandmoney2);
+            printf("\n Your Bank Money is: %lu", amount2);
+            printf("\n ENTER THE AMOUNT TO WITHDRAW: ");
+            scanf("%lu", &withdraw);
+            if (withdraw % 1 != 0)
+            {
+            }
+            else if (withdraw > (amount2 - 500))
+            {
+                printf("\n INSUFFICENT BALANCE");
+            }
+            else
+            {
+                amount2 = amount2 - withdraw;
+
+                printf("\n Your Current onhand Money is: %lu", withdraw);
+
+                printf("\n Your Current Bank Money is: %lu", amount2);
+            }
+            break;
+
+        case 2:
+            printf("\n Your onhand Money is: %lu", onhandmoney1);
+            printf("\n Your Bank Money is: %lu", amount1);
+
+            printf("\n ENTER THE AMOUNT TO DEPOSIT: ");
+            scanf("%lu", &deposit);
+            amount1 = amount1 + deposit;
+            deposit = onhandmoney1 - deposit;
+            printf("\n Your Current onhand Money is: %lu", deposit);
+            printf("\nYour Current Bank Money is: %lu", amount1);
+            break;
+        case 3:
+            printf("\n Your onhand Money is: %lu", onhandmoney1);
+            printf("\n Your Bank Money is: %lu", amount1);
+            break;
+
+        case 0:
+            printf("\n ______________THANK YOU FOR USING ATM______________");
+
+            break;
+        default:
+            printf("\n INVALID CHOICE");
+        }
+        printf("\n\n\n DO YOU WANT ANOTHER TRANSCATION?INPUT (1) IF YES (0) IF NO: \n");
+        fflush(stdin);
+        scanf("%d", &transaction);
+        if (transaction == 0)
+            k = 1;
+    } while (!k);
+    printf("\n\n ___________________THANKS FOR USING OUR ATM MACHINE____________________");
+} */
